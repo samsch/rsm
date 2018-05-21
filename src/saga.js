@@ -12,7 +12,7 @@ const effects = {
   run,
 };
 
-async function takeOne (observable, ref) {
+function takeOne (observable, ref) {
   return new Promise((res, rej) => {
     const subscription = observable.observe({
       value: value => {
