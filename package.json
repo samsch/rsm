@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf lib && babel -d dist/ src/ --ignore spec.js,test.js",
-    "example-1": "parcel -d example/dist/basic example/basic/index.html"
+    "example-1": "parcel -d example/dist/basic example/basic/index.html",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
