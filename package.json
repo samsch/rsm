@@ -1,0 +1,47 @@
+{
+  "name": "@samsch/rsm",
+  "version": "0.0.0",
+  "description": "Modern State management solution designed for React",
+  "main": "dist/rsm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf lib && babel -d dist/ src/ --ignore spec.js,test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/samsch/rsm.git"
+  },
+  "keywords": [
+    "React",
+    "State",
+    "Redux",
+    "functional",
+    "saga"
+  ],
+  "author": "Samuel Scheiderich",
+  "license": "0BSD",
+  "bugs": {
+    "url": "https://github.com/samsch/rsm/issues"
+  },
+  "homepage": "https://github.com/samsch/rsm#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-plugin-dynamic-import-node": "^1.2.0",
+    "babel-plugin-ramda": "^1.6.1",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.8.2",
+    "parcel-bundler": "^1.8.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "dependencies": {
+    "kefir": "^3.8.3",
+    "ramda": "^0.25.0"
+  }
+}
