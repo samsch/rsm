@@ -1,6 +1,6 @@
 {
   "name": "@samsch/rsm",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Modern State management solution designed for React",
   "main": "dist/rsm.js",
   "scripts": {
