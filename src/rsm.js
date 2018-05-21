@@ -1,6 +1,7 @@
 import React from 'react';
 import Kefir from 'kefir/dist/kefir.min.js';
 import * as R from 'ramda';
+const pipe = R.pipe; // Fix for issue with babel-plugin-ramda
 import saga from './saga';
 
 const singleValue = value => Kefir.stream(emitter => {
@@ -15,7 +16,7 @@ export const createStore = (initialState, debugging = false) => {
   const actionStream = Kefir.pool();
   const applyActionStream = Kefir.pool();
   const state = applyActionStream.scan((state, actions) => {
-    return R.pipe(...actions.map(a => a.action))(state);
+    return pipe(...actions.map(a => a.action))(state);
   }, initialState);
   // applyActionStream.plug(singleValue([() => initialState]));
   // Synchronous calls to dispatch will only cause one update event on the next tick.

@@ -18,7 +18,9 @@
     "react"
   ],
   "plugins": [
-    "ramda",
+    ["ramda", {
+      "useES": true
+    }],
     "syntax-dynamic-import",
     "transform-object-rest-spread"
   ],
